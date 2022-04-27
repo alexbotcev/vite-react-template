@@ -13,8 +13,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
-      "pnpm lint",
-      "pnpm test"
+      "pnpm test",
+      "pnpm lint"
     ]
   },
   "dependencies": {
