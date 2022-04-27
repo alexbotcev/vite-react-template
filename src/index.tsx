@@ -1,0 +1,13 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { App } from '@components/App/App';
+
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = createRoot(document.getElementById('root')!);
+const x = 'test';
+
+root.render(
+  <React.StrictMode>
+    <App text="test" />
+  </React.StrictMode>
+);
