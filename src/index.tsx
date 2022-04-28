@@ -4,7 +4,6 @@ import { App } from '@components/App/App';
 
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const root = createRoot(document.getElementById('root')!);
-const x = 'test';
 
 root.render(
   <React.StrictMode>

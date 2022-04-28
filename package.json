@@ -1,21 +1,19 @@
 {
   "name": "vite",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "postinstall": "husky install",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "lint": "eslint --ext .tsx --ext .ts src/ && pnpm format",
+    "lint": "eslint --ext .tsx --ext .ts src/",
+    "check": "pnpm format && pnpm lint && pnpm test",
     "test": "jest"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "pnpm test",
-      "pnpm lint"
-    ]
+    "*.{ts,tsx,js,jsx}": "pnpm check"
   },
   "dependencies": {
     "react": "^18.0.0",
